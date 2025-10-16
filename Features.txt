@@ -1,0 +1,25 @@
+A simple Library Management System built in Python that uses classes (Book, Member, and Library) to organize book details, member records, and book transactions efficiently. 
+It ensures smooth library operations like adding, borrowing, and returning books.
+
+⚙️ Features:
+Add and View Books: Add new books with auto-generated unique IDs and view all available books.
+Search Books: Find books easily using keywords from their titles.
+Member Registration: Register new members and store their data in a text file (members.txt).
+Borrow & Return Books: Members can borrow available books and return them after reading.
+File Handling: Saves member records persistently between program runs.
+Error Handling: Prevents invalid inputs and duplicate member entries.
+
+Classes Overview:
+Book → Handles book details, availability, and stock updates.
+Member → Manages member information and borrowed books.
+Library → Controls the entire system, connecting books and members with operations like borrowing, returning, and searching.
+
+How to Run:
+Save the file as library_management.py.
+Make sure members.txt exists (it will auto-create if not).
+Run using:
+python library_management.py
+Follow the on-screen menu to perform actions.
+
+File Created:
+members.txt – Stores registered members' details (Member ID, Name).
