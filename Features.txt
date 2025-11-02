@@ -1,25 +1,43 @@
-A simple Library Management System built in Python that uses classes (Book, Member, and Library) to organize book details, member records, and book transactions efficiently. 
-It ensures smooth library operations like adding, borrowing, and returning books.
+Library Management System (Python + Tkinter)
 
-⚙️ Features:
-Add and View Books: Add new books with auto-generated unique IDs and view all available books.
-Search Books: Find books easily using keywords from their titles.
-Member Registration: Register new members and store their data in a text file (members.txt).
-Borrow & Return Books: Members can borrow available books and return them after reading.
-File Handling: Saves member records persistently between program runs.
-Error Handling: Prevents invalid inputs and duplicate member entries.
+This is a simple GUI-based Library Management System built using Python, Tkinter, and OOP principles. 
+It allows users to manage books, members, and borrowing/returning operations in an easy-to-use graphical interface.
 
-Classes Overview:
-Book → Handles book details, availability, and stock updates.
-Member → Manages member information and borrowed books.
-Library → Controls the entire system, connecting books and members with operations like borrowing, returning, and searching.
+Features:
+- View list of available books
+- Add new books to the library
+- Search books by title
+- Register new library members
+- Borrow and return books
+- Automatically updates book stock
+- Member records are saved in 'members.txt' for persistence
+
+Project Structure:
+- Book Class: Stores book details and manages stock updates
+- Member Class: Stores member information and tracks borrowed books
+- Library Class: Central data manager for books and members
+- LibraryGUI Class: Handles the graphical user interface using Tkinter
+- members.txt: Stores registered members for future use
+
+Data Persistence:
+- Book information is stored in runtime only.
+- Member information is stored permanently in 'members.txt' so members remain registered after closing the program.
+
+Requirements:
+- Python 3.x
+- pillow library (pip install pillow)
+- requests library (pip install requests)
 
 How to Run:
-Save the file as library_management.py.
-Make sure members.txt exists (it will auto-create if not).
-Run using:
-python library_management.py
-Follow the on-screen menu to perform actions.
+1. Save the code to a file, for example: library.py
+2. Run the script:
+   python library.py
 
-File Created:
-members.txt – Stores registered members' details (Member ID, Name).
+GUI Design:
+- The interface uses a background image from the internet.
+- Left panel contains menu options.
+- Right panel displays selected operations.
+
+Note:
+- Internet connection is required the first time to load the background image.
+- Ensure 'members.txt' is in the same folder (it will be created automatically if missing).
